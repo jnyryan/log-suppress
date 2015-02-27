@@ -1,6 +1,6 @@
 {
   "name": "log-suppress",
-  "version": "1.0.2",
+  "version": "0.0.2",
   "description": "module to suppress console output for testing",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "tbd"
+    "url": "https://github.com/jnyryan/log-suppress"
   },
   "keywords": [
     "console",
