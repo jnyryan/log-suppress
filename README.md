@@ -1,18 +1,29 @@
 #log-suppress
 
-a little tool that stops console output based on an environment variable.
+A little tool that intercepts console.log output. Ideal for keeping tests output clean.
 
-Especially handy for automates tests so that debug statements don't appear in the middle of test output.
+Especially handy for automated tests so that debug statements don't appear in the middle of test output.
+
+
 
 ## Usage
 
 LogSuppress takes the current console and environment
 
+First, set your environment variable
+``` bash
+NODE_ENV='test'
+```
+OR
 ``` javascript
 process.env.NODE_ENV = 'test'
-require("log-suppress").init(console, 'test');
 ```
 
+Then, add the module specifying the environment you want to stop logging for.
+``` javascript
+require("log-suppress").init(console, 'test');
+```
+### Other console modules
 Using LogSuppress with other console loggers
 
 ``` javascript
