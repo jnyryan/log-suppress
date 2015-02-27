@@ -1,5 +1,7 @@
 #log-suppress
 
+![build-status](https://travis-ci.org/jnyryan/log-suppress.svg)
+
 a little tool that stops console output based on an environment variable.
 
 Especially handy for automates tests so that debug statements don't appear in the middle of test output.
