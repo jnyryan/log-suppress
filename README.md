@@ -1,10 +1,10 @@
 #log-suppress
 
+![build-status](https://travis-ci.org/jnyryan/log-suppress.svg)
+
 A little tool that intercepts console.log output. Ideal for keeping tests output clean.
 
 Especially handy for automated tests so that debug statements don't appear in the middle of test output.
-
-
 
 ## Usage
 
