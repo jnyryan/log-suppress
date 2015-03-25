@@ -4,6 +4,7 @@
   "description": "module to suppress console output for testing",
   "main": "index.js",
   "scripts": {
+    "demo": "node ./demo/demo.js",
     "test": "make test"
   },
   "repository": {
