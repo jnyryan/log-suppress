@@ -1,6 +1,9 @@
 (function() {
   var logSuppress = require('../lib/log-suppress.js');
+  var util = require('util');
 	'use strict';
+
+  console.dir(util.inspect(logSuppress));
 
   console.log("This demo will print 100 messages to the console");
   console.log("Log-Suppress will be enabled after 5 messages");

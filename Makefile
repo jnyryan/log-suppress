@@ -4,6 +4,8 @@
 test:
 	@./node_modules/.bin/mocha -u bdd -R spec
 
+test2:
+		@./node_modules/.bin/mocha -u bdd -R landing
 
 # The “TDD” interface provides suite(), test(), setup(), and teardown().
 test_bdd:
