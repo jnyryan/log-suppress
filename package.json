@@ -1,6 +1,6 @@
 {
   "name": "log-suppress",
-  "version": "0.0.4",
+  "version": "1.0.0",
   "description": "module to suppress console output for testing",
   "main": "index.js",
   "scripts": {

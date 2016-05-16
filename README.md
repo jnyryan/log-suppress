@@ -54,4 +54,4 @@ make test
 
 This package used travis to perform automated builds (see that build graphic at the top)
 
-[travis-ci](https://travis-ci.org/repositories)
+[travis-ci](https://travis-ci.org/jnyryan/log-suppress)
