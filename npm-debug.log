@@ -1,0 +1,108 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/Users/j/.nvm/versions/node/v6.0.0/bin/node',
+1 verbose cli   '/Users/j/.nvm/versions/node/v6.0.0/bin/npm',
+1 verbose cli   'publish' ]
+2 info using npm@3.8.6
+3 info using node@v6.0.0
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/Users/j/code/log-suppress',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /Users/j/.npm/log-suppress/1.0.1/package.tgz not in flight; packing
+9 verbose correctMkdir /Users/j/.npm correctMkdir not in flight; initializing
+10 info lifecycle log-suppress@1.0.1~prepublish: log-suppress@1.0.1
+11 silly lifecycle log-suppress@1.0.1~prepublish: no script for prepublish, continuing
+12 verbose tar pack [ '/Users/j/.npm/log-suppress/1.0.1/package.tgz',
+12 verbose tar pack   '/Users/j/code/log-suppress' ]
+13 verbose tarball /Users/j/.npm/log-suppress/1.0.1/package.tgz
+14 verbose folder /Users/j/code/log-suppress
+15 verbose addLocalTarball adding from inside cache /Users/j/.npm/log-suppress/1.0.1/package.tgz
+16 verbose correctMkdir /Users/j/.npm correctMkdir not in flight; initializing
+17 silly cache afterAdd log-suppress@1.0.1
+18 verbose afterAdd /Users/j/.npm/log-suppress/1.0.1/package/package.json not in flight; writing
+19 verbose correctMkdir /Users/j/.npm correctMkdir not in flight; initializing
+20 verbose afterAdd /Users/j/.npm/log-suppress/1.0.1/package/package.json written
+21 silly publish { name: 'log-suppress',
+21 silly publish   version: '1.0.1',
+21 silly publish   description: 'module to suppress console output for testing',
+21 silly publish   main: 'index.js',
+21 silly publish   scripts: { demo: 'node ./demo/demo.js', test: 'make test' },
+21 silly publish   repository:
+21 silly publish    { type: 'git',
+21 silly publish      url: 'git+https://github.com/jnyryan/log-suppress.git' },
+21 silly publish   keywords: [ 'console', 'log', 'suppress', 'stop', 'hide' ],
+21 silly publish   author: { name: 'John Ryan' },
+21 silly publish   license: 'ISC',
+21 silly publish   dependencies: { mocha: '^2.1.0' },
+21 silly publish   readme: '#log-suppress\n\n![build-status](https://travis-ci.org/jnyryan/log-suppress.svg)\n\nA little tool that intercepts console.log output. Ideal for keeping tests output clean.\n\nEspecially handy for automated tests so that debug statements don\'t appear in the middle of test output.\n\n## Installation\n\n``` bash\nnpm install log-suppress --save\n```\n\n## Usage\n\n***Log-Suppress*** takes the current console and optional environment\n\n``` javascript\nrequire("log-suppress").init(console);\n```\n\nOr for a specific environment\n\n\n``` javascript\nprocess.env.NODE_ENV = \'test\'\nrequire("log-suppress").init(console, \'test\');\n```\n\n### Other console modules\n\nUsing LogSuppress with other console loggers\n\n``` javascript\nrequire(\'console-ten\').init(console);\nrequire("log-suppress").init(console, \'test\')\n\n```\n\n## Developing Log-Suppress\n\nIf you are planning to fork this repo and continue developing it then here\'s some info.\n\n### Testing\n\nRun the bash tests\n\n```bash\nmake test\n```\n\n### Automated Build\n\nThis package used travis to perform automated builds (see that build graphic at the top)\n\n[travis-ci](https://travis-ci.org/jnyryan/log-suppress)\n',
+21 silly publish   readmeFilename: 'README.md',
+21 silly publish   gitHead: 'bed70e32345776e23a399717a366ee2d14256c3c',
+21 silly publish   bugs: { url: 'https://github.com/jnyryan/log-suppress/issues' },
+21 silly publish   homepage: 'https://github.com/jnyryan/log-suppress#readme',
+21 silly publish   _id: 'log-suppress@1.0.1',
+21 silly publish   _shasum: 'b31e23df41ca2c5aa3752d7e667225b12675ea8e',
+21 silly publish   _from: '.' }
+22 verbose getPublishConfig undefined
+23 silly mapToRegistry name log-suppress
+24 silly mapToRegistry using default registry
+25 silly mapToRegistry registry https://registry.npmjs.org/
+26 silly mapToRegistry data Result {
+26 silly mapToRegistry   raw: 'log-suppress',
+26 silly mapToRegistry   scope: null,
+26 silly mapToRegistry   name: 'log-suppress',
+26 silly mapToRegistry   rawSpec: '',
+26 silly mapToRegistry   spec: 'latest',
+26 silly mapToRegistry   type: 'tag' }
+27 silly mapToRegistry uri https://registry.npmjs.org/log-suppress
+28 verbose publish registryBase https://registry.npmjs.org/
+29 silly publish uploading /Users/j/.npm/log-suppress/1.0.1/package.tgz
+30 verbose request uri https://registry.npmjs.org/log-suppress
+31 verbose request sending authorization for write operation
+32 info attempt registry request try #1 at 2:07:16 PM
+33 verbose request using bearer token for auth
+34 verbose request id c088e0b64080e7e3
+35 http request PUT https://registry.npmjs.org/log-suppress
+36 http 403 https://registry.npmjs.org/log-suppress
+37 verbose headers { 'content-type': 'application/json',
+37 verbose headers   'cache-control': 'max-age=300',
+37 verbose headers   'content-length': '95',
+37 verbose headers   'accept-ranges': 'bytes',
+37 verbose headers   date: 'Thu, 14 Jul 2016 13:07:07 GMT',
+37 verbose headers   via: '1.1 varnish',
+37 verbose headers   connection: 'keep-alive',
+37 verbose headers   'x-served-by': 'cache-lcy1120-LCY',
+37 verbose headers   'x-cache': 'MISS',
+37 verbose headers   'x-cache-hits': '0',
+37 verbose headers   'x-timer': 'S1468501625.805724,VS0,VE1235',
+37 verbose headers   vary: 'Accept-Encoding' }
+38 verbose request invalidating /Users/j/.npm/registry.npmjs.org/log-suppress on PUT
+39 error publish Failed PUT 403
+40 verbose stack Error: "You cannot publish over the previously published version 1.0.1." : log-suppress
+40 verbose stack     at makeError (/Users/j/.nvm/versions/node/v6.0.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+40 verbose stack     at CachingRegistryClient.<anonymous> (/Users/j/.nvm/versions/node/v6.0.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:252:14)
+40 verbose stack     at Request._callback (/Users/j/.nvm/versions/node/v6.0.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+40 verbose stack     at Request.self.callback (/Users/j/.nvm/versions/node/v6.0.0/lib/node_modules/npm/node_modules/request/request.js:199:22)
+40 verbose stack     at emitTwo (events.js:106:13)
+40 verbose stack     at Request.emit (events.js:191:7)
+40 verbose stack     at Request.<anonymous> (/Users/j/.nvm/versions/node/v6.0.0/lib/node_modules/npm/node_modules/request/request.js:1036:10)
+40 verbose stack     at emitOne (events.js:101:20)
+40 verbose stack     at Request.emit (events.js:188:7)
+40 verbose stack     at IncomingMessage.<anonymous> (/Users/j/.nvm/versions/node/v6.0.0/lib/node_modules/npm/node_modules/request/request.js:963:12)
+41 verbose statusCode 403
+42 verbose pkgid log-suppress
+43 verbose cwd /Users/j/code/log-suppress
+44 error Darwin 15.5.0
+45 error argv "/Users/j/.nvm/versions/node/v6.0.0/bin/node" "/Users/j/.nvm/versions/node/v6.0.0/bin/npm" "publish"
+46 error node v6.0.0
+47 error npm  v3.8.6
+48 error code E403
+49 error "You cannot publish over the previously published version 1.0.1." : log-suppress
+50 error If you need help, you may report this error at:
+50 error     <https://github.com/npm/npm/issues>
+51 verbose exit [ 1, true ]
