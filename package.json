@@ -1,26 +1,29 @@
 {
-  "name": "log-suppress",
-  "version": "1.0.2",
-  "description": "module to suppress console output for testing",
-  "main": "index.js",
-  "scripts": {
-    "demo": "node ./demo/demo.js",
-    "test": "make test"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/jnyryan/log-suppress"
-  },
-  "keywords": [
-    "console",
-    "log",
-    "suppress",
-    "stop",
-    "hide"
-  ],
-  "author": "John Ryan",
-  "license": "ISC",
-  "dependencies": {
-    "mocha": "^2.1.0"
-  }
+    "name": "log-suppress",
+    "version": "1.0.3",
+    "description": "module to suppress console output for testing",
+    "main": "index.js",
+    "scripts": {
+        "demo": "node ./demo/demo.js",
+        "test": "make test"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/jnyryan/log-suppress"
+    },
+    "keywords": [
+        "console",
+        "log",
+        "suppress",
+        "stop",
+        "hide"
+    ],
+    "author": "John Ryan",
+    "license": "ISC",
+    "dependencies": {
+        "mocha": "^2.1.0"
+    },
+    "engines": {
+        "node": "5.0.0"
+    }
 }
